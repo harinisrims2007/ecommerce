@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Elite Furniture | Premium Living</title>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', 'Segoe UI', sans-serif;
+    }
+    body {
+        background: #fdfdfd;
+        color: #333;
+        line-height: 1.6;
+    }
+    nav {
+        background: #2d1b18; 
+        padding: 20px 8%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    nav h1 {
+        color: #e4c59e; 
+        font-size: 1.8rem;
+        letter-spacing: 1px;
+    }
+    nav ul {
+        list-style: none;
+        display: flex;
+        gap: 35px;
+    }
+    nav ul li a {
+        color: #f3f3f3;
+        font-size: 0.85rem;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        text-decoration: none;
+        transition: 0.3s;
+    }
+    nav ul li a:hover {
+        color: #e4c59e;
+    }
+    section {
+        min-height: 90vh;
+        padding: 60px 20px;
+        scroll-margin-top: 80px;
+    }
+    .hero {
+        height: 90vh;
+        background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
+                    url("https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1600&q=80") center/cover no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        color: white;
+        text-align: center;
+        padding: 0 20px;
+    }
+    .hero h2 {
+        font-size: clamp(2.5rem, 5vw, 4rem);
+        margin-bottom: 10px;
+        font-weight: 300;
+        letter-spacing: 2px;
+    }
+    .hero p {
+        font-size: 1.2rem;
+        margin-bottom: 30px;
+        color: #e4c59e;
+    }
+    .cta-btn {
+        padding: 15px 40px;
+        background: #e4c59e;
+        color: #2d1b18;
+        border: none;
+        font-weight: bold;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: 0.3s;
+        text-decoration: none;
+        display: inline-block;
+    }
+    .cta-btn:hover {
+        background: #fff;
+        transform: scale(1.05);
+    }
+    .content-wrap {
+        max-width: 1200px;
+        margin: auto;
+    }
+    .section-title {
+        text-align: center;
+        margin-bottom: 50px;
+        font-size: 2.2rem;
+        color: #2d1b18;
+    }
+    .products-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 30px;
+    }
+    .card {
+        background: white;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+        transition: 0.3s;
+        border: 1px solid #eee;
+    }
+    .card:hover {
+        transform: translateY(-10px);
+    }
+    .img-container {
+        width: 100%;
+        height: 280px;
+        overflow: hidden;
+        background: #f0f0f0;
+    }
+    .card img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.5s ease;
+    }
+    .card:hover img {
+        transform: scale(1.1);
+    }
+    .card-info {
+        padding: 20px;
+        text-align: center;
+    }
+    .price {
+        color: #8d6e63;
+        font-weight: 600;
+        margin: 10px 0;
+    }
+    .buy-btn {
+        padding: 10px 25px;
+        background: #2d1b18;
+        color: white;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        transition: 0.3s;
+        text-decoration: none;
+        display: inline-block;
+    }
+    .buy-btn:hover {
+        background: #e4c59e;
+        color: #2d1b18;
+    }
+    form {
+        max-width: 600px;
+        margin: auto;
+        background: #fff;
+        padding: 40px;
+        border-radius: 8px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    }
+    form input, form select, form textarea {
+        width: 100%;
+        padding: 15px;
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+    }
+    footer {
+        background: #1a110f;
+        color: #888;
+        text-align: center;
+        padding: 40px 20px;
+    }
+</style>
+</head>
+<body>
+
+<nav>
+    <h1>ELITE.</h1>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#products">Collection</a></li>
+        <li><a href="#order">Order</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<section id="home">
+    <div class="hero">
+        <p>ESTABLISHED 2026</p>
+        <h2>Modern Luxury For Your Interior</h2>
+        <a href="#products" class="cta-btn">Explore Collection</a>
+    </div>
+</section>
+
+<section id="products">
+    <div class="content-wrap">
+        <h3 class="section-title">The Curated Collection</h3>
+        <div class="products-grid">
+            <div class="card">
+                <div class="img-container"><img src="https://images.unsplash.com/photo-1592078615290-033ee584e267?auto=format&fit=crop&w=800&q=80" alt="Armchair"></div>
+                <div class="card-info">
+                    <h4>Royal Velvet Armchair</h4>
+                    <p class="price">₹12,500</p>
+                    <a href="#order" class="buy-btn">Select Item</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img-container"><img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=800&q=80" alt="Sofa"></div>
+                <div class="card-info">
+                    <h4>Metropolitan Sofa</h4>
+                    <p class="price">₹55,000</p>
+                    <a href="#order" class="buy-btn">Select Item</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img-container"><img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=800&q=80" alt="Bed"></div>
+                <div class="card-info">
+                    <h4>Mahogany King Bed</h4>
+                    <p class="price">₹72,000</p>
+                    <a href="#order" class="buy-btn">Select Item</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img-container"><img src="https://images.unsplash.com/photo-1577140917170-285929fb55b7?auto=format&fit=crop&w=800&q=80" alt="Table"></div>
+                <div class="card-info">
+                    <h4>Scandinavian Oak Table</h4>
+                    <p class="price">₹28,000</p>
+                    <a href="#order" class="buy-btn">Select Item</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img-container"><img src="https://images.unsplash.com/photo-1533090161767-e6ffed986c88?auto=format&fit=crop&w=800&q=80" alt="Lamp"></div>
+                <div class="card-info">
+                    <h4>Modern Floor Lamp</h4>
+                    <p class="price">₹4,200</p>
+                    <a href="#order" class="buy-btn">Select Item</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img-container"><img src="https://images.unsplash.com/photo-1581539250439-c96689b516dd?auto=format&fit=crop&w=800&q=80" alt="Chair"></div>
+                <div class="card-info">
+                    <h4>Industrial Desk Chair</h4>
+                    <p class="price">₹8,000</p>
+                    <a href="#order" class="buy-btn">Select Item</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="order">
+    <div class="content-wrap">
+        <h3 class="section-title">Place Your Order</h3>
+        <form>
+            <input type="text" placeholder="Full Name" required>
+            <input type="email" placeholder="Email Address" required>
+            <select required>
+                <option value="">Choose Furniture Piece</option>
+                <option>Royal Velvet Armchair</option>
+                <option>Metropolitan Sofa</option>
+                <option>Mahogany King Bed</option>
+                <option>Scandinavian Oak Table</option>
+                <option>Modern Floor Lamp</option>
+                <option>Industrial Desk Chair</option>
+            </select>
+            <textarea rows="4" placeholder="Delivery Address" required></textarea>
+            <button type="submit" class="cta-btn" style="width: 100%;">Confirm Reservation</button>
+        </form>
+    </div>
+</section>
+
+<section id="contact">
+    <div class="content-wrap">
+        <h3 class="section-title">Contact Support</h3>
+        <div style="max-width: 600px; margin: auto; text-align: center; background: white; padding: 40px; border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+            <h4>Elite Flagship Store</h4>
+            <p style="margin: 20px 0;">21, Designer's Square, Chennai, Tamil Nadu</p>
+            <p><b>Phone:</b> +91 98765 43210</p>
+            <p><b>Email:</b> hello@elitefurniture.com</p>
+            <hr style="margin: 30px 0; border: 0; border-top: 1px solid #eee;">
+            <p>Hours: Mon - Sat (9:00 AM - 8:00 PM)</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2026 Elite Furniture Store. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

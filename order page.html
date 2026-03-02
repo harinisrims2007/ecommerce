@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Elite Furniture | Order</title>
+<style>
+* { margin:0; padding:0; box-sizing:border-box; font-family:'Poppins','Segoe UI',sans-serif;}
+body { background:#fdfdfd; color:#333; line-height:1.6;}
+nav { background:#2d1b18; padding:20px 8%; display:flex; justify-content:space-between; align-items:center;}
+nav h1 { color:#e4c59e; font-size:1.8rem; letter-spacing:1px;}
+nav ul { list-style:none; display:flex; gap:35px;}
+nav ul li a { color:#f3f3f3; text-decoration:none; font-size:0.85rem; text-transform:uppercase; letter-spacing:1.5px; transition:0.3s;}
+nav ul li a:hover { color:#e4c59e;}
+.content-wrap { max-width:600px; margin:auto; padding:60px 20px;}
+.section-title { text-align:center; margin-bottom:50px; font-size:2.2rem; color:#2d1b18;}
+form { background:#fff; padding:40px; border-radius:8px; box-shadow:0 10px 30px rgba(0,0,0,0.05);}
+form input, form select, form textarea { width:100%; padding:15px; margin-bottom:15px; border:1px solid #ddd; border-radius:4px;}
+.cta-btn { padding:15px 40px; background:#e4c59e; color:#2d1b18; border:none; font-weight:bold; text-transform:uppercase; cursor:pointer; width:100%; transition:0.3s;}
+.cta-btn:hover { background:#fff; }
+</style>
+</head>
+<body>
+
+<nav>
+    <h1>ELITE.</h1>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Collection</a></li>
+        <li><a href="order.html">Order</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<div class="content-wrap">
+    <h3 class="section-title">Place Your Order</h3>
+    <form>
+        <input type="text" placeholder="Full Name" required>
+        <input type="email" placeholder="Email Address" required>
+        <select required>
+            <option value="">Choose Furniture Piece</option>
+            <option>Royal Velvet Armchair</option>
+            <option>Metropolitan Sofa</option>
+            <option>Mahogany King Bed</option>
+            <option>Scandinavian Oak Table</option>
+            <option>Modern Floor Lamp</option>
+            <option>Industrial Desk Chair</option>
+        </select>
+        <textarea rows="4" placeholder="Delivery Address" required></textarea>
+        <button type="submit" class="cta-btn">Confirm Reservation</button>
+    </form>
+</div>
+
+</body>
+</html>
